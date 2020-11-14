@@ -32,6 +32,12 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.2",
+    "babel-jest": "^26.6.3",
+    "babel-preset-gatsby": "^0.5.16",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
     "prettier": "2.1.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -51,6 +57,6 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest"
   }
 }

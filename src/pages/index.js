@@ -40,7 +40,11 @@ const BlogIndex = ({ data, location }) => {
               >
                 <header>
                   <h2>
-                    <Link to={post.fields.slug} itemProp="url">
+                    <Link
+                      data-testid={post.fields.slug + "-link"}
+                      to={post.fields.slug}
+                      itemProp="url"
+                    >
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
@@ -48,6 +52,7 @@ const BlogIndex = ({ data, location }) => {
                 </header>
                 <section>
                   <p
+                    data-testid={post.fields.slug + "-desc"}
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
                     }}
